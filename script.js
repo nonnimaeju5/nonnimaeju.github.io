@@ -21,7 +21,7 @@ const add = (contact) => { // parameter
     console.log("Missing fields");
     return;
   }
-  //Success “was added”
+  // “was added”
   contacts.push(contact);
   console.log("was added");
 
@@ -48,8 +48,7 @@ const remove = (email) => {
       contacts.splice(i, 1);    // Splice is used to modify the contents of an array by removing existing elements and / or adding new elements.
       console.log("was removed");
       return;
-    }
-  } else {
+    } else {
       console.log("Contact not found");  
   }
 }
@@ -73,8 +72,7 @@ const edit = (email, newData) => {
       contacts[i] = {...contacts[i], ...newData}; // Spread operator
       console.log("was updated");
       return;
-    }
-  } else {
+    } else {
     console.log("Contact not found");
   }
 }
@@ -99,8 +97,7 @@ const get = (email) => {
       console.log("Name: " + contacts[i].name);
       console.log("Email: " + contacts[i].email);
       return;
-    }
-  } else {
+    } else {
     console.log("Contact not found");
   }
 }
@@ -137,5 +134,5 @@ const clear = () =>
 clear(); // Clear all contacts
 
 
-// All functions must be available to use from the Console
+
 
